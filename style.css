@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.title {
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+  border-radius: 2rem;
+  color: #000000;
+  padding: 1rem;
+  margin: 2rem;
+}
