@@ -22,10 +22,45 @@
           <br />
           <input type="text" name="user-cash" id="user-cash" />
           <br />
-          <button id="submit" type="submit">getChange</button>
+          <button id="submit" type="submit">Change</button>
+          <button id="reset" type="reset">Reset</button>
+          <p id="output"></p>
         </h2>
+        <br />
+        <table>
+          <caption>
+            <h2>Change Table</h2>
+          </caption>
+          <tr>
+            <th class="change-section">Change</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th class="count-section">Count</th>
+            <td class="changeCount">0</td>
+            <td class="changeCount">0</td>
+            <td class="changeCount">0</td>
+            <td class="changeCount">0</td>
+            <td class="changeCount">0</td>
+            <td class="changeCount">0</td>
+            <td class="changeCount">0</td>
+          </tr>
+        </table>
       </div>
     </header>
-    <script type="text/js" src="main.js"></script>
+
+    <footer>
+      <audio src="sound/vintage-info-message.mp3" id="infoSE"></audio>
+      <audio src="sound/fail-trumpet.mp3" id="failSE"></audio>
+      <audio src="sound/tada.mp3" id="successSE"></audio>
+      <audio src="sound/reset.mp3" id="resetSE"></audio>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
