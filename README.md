@@ -11,3 +11,5 @@ This is a cash register app which calculate minimum change.
 
 # Deployment Service
 - [Netlify](https://netlify.com)
+
+# Click [here](https://harshv-cash-register.netlify.app) to visit my site.
