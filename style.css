@@ -40,7 +40,8 @@ button {
   margin-top: 0.5rem;
   margin-left: 0.4rem;
   padding: 12px 24px;
-  background: transparent;
+  outline: none;
+  background: none;
   border-radius: 2rem;
   transition-duration: 0.5s;
 }
@@ -81,7 +82,7 @@ footer {
 /* To hold all items in the footer tag in one place */
 .footer-container {
   text-decoration: none;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
   width: auto;
   height: auto;
   text-align: center;
@@ -109,7 +110,7 @@ footer {
   align-items: justify;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem;
 }
 
 #page-end {

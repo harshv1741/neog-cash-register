@@ -1,6 +1,7 @@
 const billAmt = document.querySelector("#bill-amt");
 const cashReceived = document.querySelector("#user-cash");
 const submit = document.querySelector("#submit");
+const reset = document.querySelector("#reset");
 const msg = document.querySelector("#output");
 const changeSection = document.querySelectorAll(".changeCount");
 
@@ -10,6 +11,7 @@ const showMsg = (text, sound_selector) => {
   const infoSE = document.querySelector("#infoSE");
   const failSE = document.querySelector("#failSE");
   const successSE = document.querySelector("#successSE");
+  const resetSE = document.querySelector("#resetSE");
 
   switch (sound_selector) {
     case "info":
@@ -28,6 +30,13 @@ const showMsg = (text, sound_selector) => {
       msg.style.color = "red";
       msg.innerText = text;
       failSE.play();
+      break;
+
+    case "reset":
+      msg.innerText = "";
+      billAmt.value = "";
+      cashReceived.value = "";
+      resetSE.play();
       break;
 
     default:
@@ -70,4 +79,8 @@ submit.addEventListener("click", () => {
       showMsg("Enter both the numbers", "info");
     }
   }
+});
+
+reset.addEventListener("click", () => {
+  showMsg("", "reset");
 });
