@@ -1,6 +1,7 @@
 const billAmt = document.querySelector("#bill-amt");
 const cashReceived = document.querySelector("#user-cash");
 const submit = document.querySelector("#submit");
+const reset = document.querySelector("#reset");
 const msg = document.querySelector("#output");
 const changeSection = document.querySelectorAll(".changeCount");
 
@@ -28,6 +29,10 @@ const showMsg = (text, sound_selector) => {
       msg.style.color = "red";
       msg.innerText = text;
       failSE.play();
+      break;
+
+    case "reset":
+      msg.innerText = "";
       break;
 
     default:
@@ -70,4 +75,8 @@ submit.addEventListener("click", () => {
       showMsg("Enter both the numbers", "info");
     }
   }
+});
+
+reset.addEventListener("click", () => {
+  
 });
