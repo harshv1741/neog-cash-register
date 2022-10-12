@@ -36,6 +36,7 @@ const showMsg = (text, sound_selector) => {
       msg.innerText = "";
       billAmt.value = "";
       cashReceived.value = "";
+      resetSE.play();
       break;
 
     default:
