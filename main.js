@@ -11,6 +11,7 @@ const showMsg = (text, sound_selector) => {
   const infoSE = document.querySelector("#infoSE");
   const failSE = document.querySelector("#failSE");
   const successSE = document.querySelector("#successSE");
+  const resetSE = document.querySelector("#resetSE");
 
   switch (sound_selector) {
     case "info":
@@ -33,6 +34,8 @@ const showMsg = (text, sound_selector) => {
 
     case "reset":
       msg.innerText = "";
+      billAmt.value = "";
+      cashReceived.value = "";
       break;
 
     default:
@@ -78,5 +81,5 @@ submit.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
-  
+  showMsg("", "reset");
 });
